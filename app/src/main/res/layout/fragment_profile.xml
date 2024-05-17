@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/name_l"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:hint="Почта"
+        android:orientation="horizontal"
+        android:outlineSpotShadowColor="@color/startGreenColor"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/yeonsung"
+            android:gravity="center"
+            android:text="Имя"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lato"
+            android:inputType="text"
+            android:text="Александр"
+            android:textColor="#B8B2B2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/adress_l"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:hint="Email"
+        android:orientation="horizontal"
+        android:outlineSpotShadowColor="@color/startGreenColor"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_l">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/yeonsung"
+            android:text="Адрес"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lato"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:text="г. Самара, Московское шоссе 34Б"
+            android:textColor="#B8B2B2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/sign_in_email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:drawablePadding="15dp"-->
+<!--        android:elevation="1dp"-->
+<!--        android:hint="Email"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:outlineSpotShadowColor="@color/startGreenColor"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/adress_l">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fontFamily="@font/yeonsung"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Почта"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/profile_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="36dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:fontFamily="@font/lato"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:text=""-->
+<!--            android:textColor="#B8B2B2"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/phone_l"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:hint="Email"
+        android:orientation="horizontal"
+        android:outlineSpotShadowColor="@color/startGreenColor"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress_l">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/yeonsung"
+            android:gravity="center"
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lato"
+            android:inputType="phone"
+            android:text="123456789"
+            android:textColor="#B8B2B2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/log_out_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:drawableEnd="@drawable/ic_log"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/yeonsung"
+        android:gravity="center_vertical"
+        android:text="Выйти из аккаунта"
+        android:textColor="@color/startGreenColor"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_l" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/green_btn"
+        android:elevation="10dp"
+        android:fontFamily="@font/yeonsung"
+        android:outlineAmbientShadowColor="@color/startGreenColor"
+        android:outlineSpotShadowColor="@color/startGreenColor"
+        android:shadowColor="@color/startGreenColor"
+        android:shadowDy="@integer/material_motion_duration_long_2"
+        android:shadowRadius="5"
+        android:text="Сохранить информацию"
+        android:textAllCaps="false"
+        android:textColor="@color/startGreenColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

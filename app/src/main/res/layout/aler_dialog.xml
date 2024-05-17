@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="2dp"
+    android:outlineAmbientShadowColor="@color/endGreenColor"
+    android:outlineSpotShadowColor="@color/endGreenColor"
+    app:cardBackgroundColor="#F1E8E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:textSize="30sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/endGreenColor"
+            android:textStyle="bold"
+            android:fontFamily="@font/yeonsung"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="6dp"
+            android:textColor="@color/black"
+            android:text="Are you sure you want to start a new activity with the selected location?"
+            android:fontFamily="@font/lato"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop = "40dp"
+            android:layout_marginBottom="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consel"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:textColor="@color/white"
+                android:text="Consel"
+                android:textSize="17sp"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/endGreenColor"
+                android:outlineSpotShadowColor="@color/endGreenColor"
+                android:fontFamily="@font/yeonsung"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btn_green_90"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_yes"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:textColor="@color/white"
+                android:text="Yes"
+                android:textSize="17sp"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/endGreenColor"
+                android:outlineSpotShadowColor="@color/endGreenColor"
+                android:fontFamily="@font/yeonsung"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_green_90"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
